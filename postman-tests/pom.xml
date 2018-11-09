@@ -111,6 +111,7 @@ under the License.
 							<![CDATA[
 			                -c "newman run ./Membrane.postman_collection.json \
 			                -e ./environments/${postman.env}.postman_environment.json \
+								 --disable-unicode \
 			                --reporters junit,cli -x \
 			                --reporter-junit-export ./target/NewmanTestResults.xml"
 			                ]]>
